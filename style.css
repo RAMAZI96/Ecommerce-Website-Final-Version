@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,300;1,200;1,300&display=swap');
+
+body{
+font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar{
+    font-size: 16px;
+   top:0;
+    left: 0;
+    box-shadow: 0 5px 10 px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h6{
+    color:#D8D8D8;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    background-color: #1d1d1d;
+    color:aliceblue;
+    cursor: pointer;
+    padding: 13px 30px;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #3a3833; 
+}
+
+.navbar-light .navbar-nav .nav-item a{
+    color: black;
+    padding: 0 20px;
+    transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-item a:hover,
+.fas:hover,
+.navbar-light .navbar-nav .nav-item a:active,
+.fas.active
+{
+color:coral;
+}
+.navbar-light .navbar-nav .nav-item .active a
+{
+color:coral;
+}
+.fas{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+   
+}
+.fa-bars{
+    font-size:1.5rem ;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color:black;
+}
+.fa-bars:hover,
+.fa-bars.active{
+    color:white
+}
+
+/* mobile nav*/
+.navbar-light .navbar-toggler{
+    border:none;
+    outline:none;
+}
+
+@media only screen and (max-width:991px){
+    body>nav>div>button:hover,
+    body>nav>div>button:focus{
+        background-color: #fb774b;
+    }
+    body>nav>div>button:hover i,
+    body>nav>div>button:focus i{
+        color: white;
+    }
+    
+#navbarSupportedContent  ul{
+    margin: 1rem;
+    justify-content:flex-end ;
+    align-items: flex-end;
+    text-align:right ;
+}
+#navbarSupportedContent  ul li {
+    padding: 10px 0;
+}
+
+}
+#home{
+    background-image:url("back1.jpeg") ;
+width:100% ;
+height: 100vh;
+background-size: cover;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+flex-basis: 100%;
+
+}
+#home span{
+    color:coral;
+
+}
+.row #im{
+    height: 90px;
+}
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+position: absolute;
+width: 100%;
+height: 100%;
+top:0;
+left:0;
+transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(245, 178,178, 0.7);
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2a2a2a ;
+    padding: 2.5px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+#new .one .details button:hover{
+    color:#fff;
+    border-bottom: 1px solid #fff;
+}
+#new .one:nth-child(1) .details{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: flex-start;
+text-align: start;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    #new .one:nth-child(3) .details{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+        }
+
+
+        /* products */
+    #id{
+        width: 330px;
+        height: 300px;
+    }
+    .product{
+        cursor:pointer;
+        margin-bottom: 2rem;
+    }
+    .product img{
+        transition: 0.3s all;
+    }
+    .product:hover img{
+        opacity: 0.7;
+    }
+    .product .buy-btn{
+        background: #fb774b;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    .product:hover .buy-btn{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .container hr{
+        width: 30px;
+        height: 2px;
+        background-color: #fb774b;
+
+    }
+    .hr{
+        
+        width: 30px;
+        height: 2px;
+        background-color: #fb774b;
+        text-align: left;
+        margin-bottom: 2px;
+    }
+    .star i{
+        font-size:0.8rem ;
+        color:goldenrod;
+    }
+    .star{
+        padding: 10px 0;
+    }
+    #banner{
+        background-image:url("logo2.png") ;
+        width:100% ;
+        height: 60vh;
+        background-size: cover;
+        background-position: top 80px center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #banner h4{
+        color: #D8D8D8; 
+    }
+    #banner h1{
+        color: #fff;
+    }
+    #banner button{
+        background-color: #fb774b;
+    }
+    #is{
+        width: 300px;
+        height: 400px;
+    }
+    .up{
+        margin-top: -80px;
+    }
+    .logo1{
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+    .pay{
+        height: 25px;
+        width: 150px;
+    }
+    
+    footer{
+        background-color: #222222;
+    }
+    footer h5 {
+        color:#D8D8D8;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    footer h6 {
+        color:#D8D8D8;
+        
+    }
+    footer li{
+        padding-bottom: 4px ;
+
+    }
+    footer li a{
+      font-size: 0.8rem;
+        color:#999;
+    
+    }
+     footer li a:hover{
+     
+        color:#D8D8D8;
+    }
+    footer p{
+        color:#999;
+        font-size: 0.8rem;
+    }
+
+    
+        /* logoebi */
+
+        #logoebi{
+            margin-left: 65px;
+        }
+    footer .copyright a{
+        color:#000;
+        width: 38px;
+        height: 38px;
+background-color: #fff;
+display: inline-block;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+transition: 0.3s ease;
+margin: 0 5px;
+    }
+    footer .copyright a:hover{
+        color:#fff;
+        background-color: #fb774b;
+    }
+.goto{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -35px;
+    font-size: 25px;
+}
+.goto2{
+    position: absolute;
+    margin-left: 60px;
+    margin-top: 5px;
+   
+}
+.ctive{
+    margin-left: 30px;
+}
+
+ /* blogs */
+ #vaxme{
+    height: 280px;
+    width: 200px;
+ }
+ #vaaxme{
+    height: 251px;
+ }
+ #blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+ }
+ #blog-container .post img{
+  transition: 0.3s ease;
+ }
+ #blog-container .post:hover img{
+    transform: scale(1.3) rotate(-8deg);
+    opacity:0.8;
+
+ }
+ #blog-container .post:hover h3{
+    transition: 0.3s ease;
+    cursor: pointer;
+ }
+ #blog-container .post:hover h3{
+    color:#fd8c66;
+    }
+#banner{
+    height: 200px;
+}
+#afterbanner{
+    height: 250px;
+}
+
+
+
+
+
+
+
+
+
+ /*-------------- cart items--------------*/
+
+ .cart-page{
+    margin: 80px auto;
+     }
+     table{
+       width: 100%; 
+       border-collapse: collapse;
+     }
+     .cart-info{
+        display: flex;
+        flex-wrap: wrap;
+     }
+     th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+     }
+     .cart-info img{
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+     }
+    td{
+        padding: 10px 5px;
+       
+    }
+    td input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+    }
+    td a{
+        color:#ff523b;
+        font-size: 12px;
+   
+    }
+    .total-price{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .total-price table{
+        border-top: 3px solid #ff523b;
+        width: 100%;
+        max-width: 460px;
+    }
+    td:last-child{
+        text-align: right;
+    }
+    th:last-child{
+        text-align: right;
+    }
+    
+ #a{
+        text-decoration: none;
+        color: #ff523b;;
+    }
+
+    
+ /*-------------- sxva--------------*/
+    #smallimg{
+        height: 108px;
+    }
+    .iss{
+        width: 445px;
+        height: 430px;
+    }
